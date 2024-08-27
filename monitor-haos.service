@@ -1,0 +1,7 @@
+[Unit]
+Description=Minitor Home Assistant
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=+/usr/lib/check_cloudflared.sh
